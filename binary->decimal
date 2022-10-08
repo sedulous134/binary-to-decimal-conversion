@@ -1,0 +1,21 @@
+// convert binary to decimal
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+int main() {
+  int l,s,i,rem;
+  cin>>l>>s;
+  int dec=0;i=0;rem;
+  while(s!=0){
+    rem=s%10;
+    s/=10;
+    dec+=rem*pow(2,i);
+    ++i;
+  }
+
+  cout<< dec;
+}
