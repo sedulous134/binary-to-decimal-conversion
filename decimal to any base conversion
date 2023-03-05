@@ -1,0 +1,27 @@
+char reVal(int num)
+    {
+        if (num >= 0 && num <= 9)
+            return (char)(num + '0');
+        else
+            return (char)(num - 10 + 'A');
+    }
+    
+   
+ 
+    string getNumber(int B, int N)
+    {
+         // Initialize index of result
+        string res;
+        // Convert input number is given base by repeatedly
+        // dividing it by base and taking remainder
+        while (N > 0)
+        {
+            res.push_back(reVal(N % B));
+            N /= B;
+        }
+        
+        // Reverse the result
+        reverse(res.begin(),res.end());
+     
+        return res;
+    }
