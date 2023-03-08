@@ -1,0 +1,11 @@
+ long long sumOfDivisors(int N)
+    {
+        // Write Your Code he
+        long long cnt=0;
+        for(int i=1;i<=N;i++){
+            cnt+=(N/i)*i;
+        }
+        
+        
+        return cnt;
+    }
