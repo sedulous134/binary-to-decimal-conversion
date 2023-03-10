@@ -1,0 +1,6 @@
+  long long __gcd(long long a,long long b){
+            if(b==0){
+                return a;
+            }
+            return __gcd(b,a%b);
+        }
