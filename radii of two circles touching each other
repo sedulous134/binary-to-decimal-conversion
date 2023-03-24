@@ -1,0 +1,17 @@
+int r1;
+int r2;
+
+int x1,y1;
+int x2,y2;
+
+int radii=(r2+r1)*(r2+r1);
+
+int distofcenteres=(x2-x1)*(x2-x1)+(y2-y1)*(y2-y1);
+
+
+if(distofcenteres<=raddi){
+cout<<"circles touch each other"<<endl;
+}
+else{
+cout<<"circles don't touch each other"<<endl;
+}
